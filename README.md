@@ -48,60 +48,24 @@ Make sure you have the following installed:
 - A [Stripe account](https://stripe.com/ "https://stripe.com/")  
 - A [Cloudinary account](https://cloudinary.com/ "https://cloudinary.com/")  
 - A [Resend account (for OTP/email)](https://resend.com/ "https://resend.com/")  
-**1. Clone the Repository**  
-git clone https://github.com/yashtiwari7028/QuickcartBlinkit.git  
- cd QuickcartBlinkit  
-   
-**2. Setup the Server**  
+**1. Setup the Server**  
 cd server  
  npm install  
    
 Create a .env file in the server/ directory:  
-PORT=5000  
- MONGODB_URI=your_mongodb_connection_string  
- JWT_SECRET=your_jwt_secret  
-   
- STRIPE_SECRET_KEY=your_stripe_secret_key  
-   
- CLOUDINARY_CLOUD_NAME=your_cloudinary_cloud_name  
- CLOUDINARY_API_KEY=your_cloudinary_api_key  
- CLOUDINARY_API_SECRET=your_cloudinary_api_secret  
-   
- RESEND_API_KEY=your_resend_api_key  
-   
 Start the server:  
 npm run dev  
    
-**3. Setup the Client**  
+**2. Setup the Client**  
 cd ../client  
  npm install  
    
 Create a .env file in the client/ directory:  
-VITE_API_URL=http://localhost:5000  
- VITE_STRIPE_PUBLIC_KEY=your_stripe_public_key  
-   
 Start the frontend:  
 npm run dev  
    
 The app will be available at http://localhost:5173.  
-![](data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAnEAAAACCAYAAAA3pIp+AAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAANElEQVR4nO3OQQmAABRAsSdYxKY/jMFMIZ7ECt5E2BJsmZmt2gMA4C+Otbqr8+sJAACvXQ85QgYXd/O+eQAAAABJRU5ErkJggg==)  
-**🔑 Environment Variables Summary**  
-| | |  
-|-|-|  
-| **Variable** | **Description** |   
-| MONGODB_URI | MongoDB connection string |   
-| JWT_SECRET | Secret key for JWT tokens |   
-| STRIPE_SECRET_KEY | Stripe secret key (backend) |   
-| VITE_STRIPE_PUBLIC_KEY | Stripe publishable key (frontend) |   
-| CLOUDINARY_CLOUD_NAME | Cloudinary cloud name |   
-| CLOUDINARY_API_KEY | Cloudinary API key |   
-| CLOUDINARY_API_SECRET | Cloudinary API secret |   
-| RESEND_API_KEY | Resend API key for OTP emails |   
-   
-![](data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAnEAAAACCAYAAAA3pIp+AAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAANUlEQVR4nO3OMQ2AABAAsSNhYMMAKlD4OzrxgQU2QtIq6DIzR3UFAMBf3Gu1VefXEwAAXtsfSqADWz4G/HUAAAAASUVORK5CYII=)  
-**📸 Screenshots**  
-*Add screenshots of your app here (homepage, cart, admin panel, checkout, etc.)*  
-![](data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAnEAAAACCAYAAAA3pIp+AAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAANUlEQVR4nO3OQQmAABRAsSd49m4v6wg/pwmMYQVvImwJtszMXp0BAPAX91pt1fH1BACA164Hoq8EQMMPmF8AAAAASUVORK5CYII=)  
+![](data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAnEAAAACCAYAAAA3pIp+AAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAANklEQVR4nO3OQQmAABRAsScYxpg/h5VMYARvRrCCNxG2BFtmZquOAAD4i3Ot7mr/egIAwGvXA224BcUMk6pDAAAAAElFTkSuQmCC)  
 **🛠️ Scripts**  
 **Client**  
 | | |  
@@ -118,7 +82,7 @@ The app will be available at http://localhost:5173.
 | npm run dev | Start server with nodemon |   
 | npm start | Start server in production |   
    
-![](data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAnEAAAACCAYAAAA3pIp+AAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAANUlEQVR4nO3OMQ2AABAAsSNBCkLfE07YGfHAiAU2QtIq6DIzW7UHAMBfnGt1V8fXEwAAXrse4eQF6VhvmPsAAAAASUVORK5CYII=)  
+![](data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAnEAAAACCAYAAAA3pIp+AAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAANUlEQVR4nO3OMQ2AABAAsSNBCUpfD6ZYGZDAgAU2QtIq6DIzW7UHAMBfHGt1V+fXEwAAXrseHCoGAe/SKtAAAAAASUVORK5CYII=)  
 **🤝 Contributing**  
 Contributions are welcome! Feel free to fork this repo and submit a pull request.  
 1. Fork the repository  
@@ -126,4 +90,4 @@ Contributions are welcome! Feel free to fork this repo and submit a pull request
 3. Commit your changes (git commit -m 'Add some feature')  
 4. Push to the branch (git push origin feature/your-feature)  
 5. Open a Pull Request  
-![](data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAnEAAAACCAYAAAA3pIp+AAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAM0lEQVR4nO3OMQ0AIAwAwZKQ6kBqjSAOJywYYCIkd9OP36pqRMQMAAB+sfqJfLoBAMCN3NYoAzBA+QG0AAAAAElFTkSuQmCC)  
+![](data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAnEAAAACCAYAAAA3pIp+AAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAANElEQVR4nO3OQQmAUBBAwSf8GGLWDWFDY3ixgjcRZhLMNjNHdQYAwF9cq1rV/vUEAIDX7gcRXAQ2s/16gwAAAABJRU5ErkJggg==)  
